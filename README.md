@@ -1,4 +1,4 @@
-# TP Coloriage de Graphe - Allocation de Registres
+# TP Coloriage de Graphe - Allocation de Registres Compilation
 
 ## Auteur
 - **Nom et prénom** : LADJ Hadil -GL

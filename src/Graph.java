@@ -1,3 +1,6 @@
+
+//  LADJ HADIL GL
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +36,7 @@ public class Graph {
         List<Node> stack = new ArrayList<>();
         List<Node> spilledNodes = new ArrayList<>();
 
-        // Phase de simplification
+
         while (!nodes.isEmpty()) {
             Node triviallyColorable = null;
             for (Node node : nodes) {
@@ -59,7 +62,7 @@ public class Graph {
             }
         }
 
-        // Phase de coloriage
+        //  coloriage
         while (!stack.isEmpty()) {
             Node node = stack.remove(stack.size() - 1);
             List<Integer> forbiddenColors = new ArrayList<>();
@@ -126,7 +129,7 @@ public class Graph {
                 node.color = color;
                 spilledNodes.remove(node);
                 coalescingApplied = true;
-                i--; // Ajuster l'index après suppression
+                i--; //
             }
         }
 
@@ -157,9 +160,9 @@ public class Graph {
     }
     public void displayEdges() {
         System.out.println("Arêtes d'interférence :");
-        for (Node node : allNodes) { // Remplacez `nodes` par `allNodes` si vous voulez toutes les connexions d'origine
+        for (Node node : allNodes) {
             for (Node neighbor : node.interferences) {
-                if (node.name.compareTo(neighbor.name) < 0) { // Eviter les doublons
+                if (node.name.compareTo(neighbor.name) < 0) {
                     System.out.println(node.name + " -- " + neighbor.name);
                 }
             }
@@ -180,7 +183,7 @@ public class Graph {
             System.out.println();
             for (Node node : allNodes) {
                 for (Node preference : node.preferences) {
-                    if (node.name.compareTo(preference.name) < 0) { // Eviter les doublons
+                    if (node.name.compareTo(preference.name) < 0) {
                         System.out.println(node.name + " -- " + preference.name);
                     }
                 }

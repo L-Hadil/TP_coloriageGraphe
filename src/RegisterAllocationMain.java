@@ -1,3 +1,6 @@
+
+//  LADJ HADIL GL
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -55,7 +58,7 @@ public class RegisterAllocationMain {
                 graph.optimizeWithCoalescing(spilledNodes, k);
             } else {
                 System.out.println("\nTous les nœuds ont été coloriés sans spillage.");
-                graph.displayResults(spilledNodes); // Affiche le résultat final même sans spillage
+                graph.displayResults(spilledNodes);
             }
         }
         scanner.close();

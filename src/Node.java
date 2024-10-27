@@ -1,5 +1,7 @@
-import java.util.ArrayList;
 
+//  LADJ HADIL GL
+
+import java.util.ArrayList;
 public class Node {
     String name;
     ArrayList<Node> interferences = new ArrayList<>();
