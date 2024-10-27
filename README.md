@@ -1,7 +1,7 @@
+# TP Coloriage de Graphe - Allocation de Registres
+
 ## Auteur
 - **Nom et prénom** : LADJ Hadil -GL
-
-# TP Coloriage de Graphe - Allocation de Registres
 
 Ce projet implémente un algorithme de coloriage de graphe basé sur la méthode de Chaitin pour l'allocation de registres. L'objectif est de minimiser le spilling et d'optimiser l'assignation des registres grâce au coalescing.
 
